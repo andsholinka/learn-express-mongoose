@@ -161,9 +161,9 @@ userRouter.get('/user', auth, async (req, res) => {
 
     const role = req.user.role;
     try {
-        if (role == '1') {
+        if (role == '0') {
             const user = await User.find({
-                role: 1
+                role: 0
             });
             if (user && user.length !== 0) {
                 res.status(200).json({
@@ -178,7 +178,7 @@ userRouter.get('/user', auth, async (req, res) => {
             }
         } else {
             const user = await User.find({
-                role: 0
+                role: 1
             });
             if (user && user.length !== 0) {
                 res.status(200).json({
