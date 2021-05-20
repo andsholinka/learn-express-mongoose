@@ -11,6 +11,3 @@ npm install
 setup the .env
 run start.dev
 ```
-
-## API DOC
-* [LINK](https://documenter.getpostman.com/view/13775058/TzRa64Cs) - Postman
